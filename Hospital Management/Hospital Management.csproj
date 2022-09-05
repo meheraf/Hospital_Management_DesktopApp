@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9DF72C0F-14C9-49DF-A685-47BBFA11407A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Hospital_Management</RootNamespace>
+    <AssemblyName>Hospital Management</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bill.Designer.cs">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Depertments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Depertments.Designer.cs">
+      <DependentUpon>Depertments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorList.Designer.cs">
+      <DependentUpon>DoctorList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctors.Designer.cs">
+      <DependentUpon>doctors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hospitalManagementSystem_DBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hospitalManagementSystem_DBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hospitalManagementSystem_DBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hospitalManagementSystem_DBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hospitalManagementSystem_DBDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hospitalManagementSystem_DBDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hospitalManagementSystem_DBDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hospitalManagementSystem_DBDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hospitalManagementSystem_DBDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hospitalManagementSystem_DBDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hospitalManagementSystem_DBDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hospitalManagementSystem_DBDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hospitalManagementSystem_DBDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hospitalManagementSystem_DBDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hospitalManagementSystem_DBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hospitalManagementSystem_DBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hospitalManagementSystem_DBDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hospitalManagementSystem_DBDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hospitalManagementSystem_DBDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hospitalManagementSystem_DBDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hospitalManagementSystem_DBDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hospitalManagementSystem_DBDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hospitalManagementSystem_DBDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hospitalManagementSystem_DBDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hospitalManagementSystem_DBDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hospitalManagementSystem_DBDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hospitalManagementSystem_DBDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hospitalManagementSystem_DBDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hospitalManagementSystem_DBDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hospitalManagementSystem_DBDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="inPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inPatient.Designer.cs">
+      <DependentUpon>inPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab.Designer.cs">
+      <DependentUpon>Lab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="outPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="outPatient.Designer.cs">
+      <DependentUpon>outPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="patientList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="patientList.Designer.cs">
+      <DependentUpon>patientList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patients.Designer.cs">
+      <DependentUpon>Patients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuickSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuickSearch.Designer.cs">
+      <DependentUpon>QuickSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rooms.Designer.cs">
+      <DependentUpon>Rooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stuff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stuff.Designer.cs">
+      <DependentUpon>stuff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StuffList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StuffList.Designer.cs">
+      <DependentUpon>StuffList.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Bill.resx">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Depertments.resx">
+      <DependentUpon>Depertments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorList.resx">
+      <DependentUpon>DoctorList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctors.resx">
+      <DependentUpon>doctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inPatient.resx">
+      <DependentUpon>inPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab.resx">
+      <DependentUpon>Lab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="outPatient.resx">
+      <DependentUpon>outPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="patientList.resx">
+      <DependentUpon>patientList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patients.resx">
+      <DependentUpon>Patients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="QuickSearch.resx">
+      <DependentUpon>QuickSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rooms.resx">
+      <DependentUpon>Rooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stuff.resx">
+      <DependentUpon>stuff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StuffList.resx">
+      <DependentUpon>StuffList.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="hospitalManagementSystem_DBDataSet.xsc">
+      <DependentUpon>hospitalManagementSystem_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hospitalManagementSystem_DBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet.xss">
+      <DependentUpon>hospitalManagementSystem_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet1.xsc">
+      <DependentUpon>hospitalManagementSystem_DBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hospitalManagementSystem_DBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet1.xss">
+      <DependentUpon>hospitalManagementSystem_DBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet10.xsc">
+      <DependentUpon>hospitalManagementSystem_DBDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hospitalManagementSystem_DBDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet10.xss">
+      <DependentUpon>hospitalManagementSystem_DBDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet11.xsc">
+      <DependentUpon>hospitalManagementSystem_DBDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hospitalManagementSystem_DBDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet11.xss">
+      <DependentUpon>hospitalManagementSystem_DBDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet12.xsc">
+      <DependentUpon>hospitalManagementSystem_DBDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hospitalManagementSystem_DBDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet12.xss">
+      <DependentUpon>hospitalManagementSystem_DBDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet13.xsc">
+      <DependentUpon>hospitalManagementSystem_DBDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hospitalManagementSystem_DBDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet13.xss">
+      <DependentUpon>hospitalManagementSystem_DBDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet14.xsc">
+      <DependentUpon>hospitalManagementSystem_DBDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hospitalManagementSystem_DBDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet14.xss">
+      <DependentUpon>hospitalManagementSystem_DBDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet2.xsc">
+      <DependentUpon>hospitalManagementSystem_DBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hospitalManagementSystem_DBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet2.xss">
+      <DependentUpon>hospitalManagementSystem_DBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet3.xsc">
+      <DependentUpon>hospitalManagementSystem_DBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hospitalManagementSystem_DBDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet3.xss">
+      <DependentUpon>hospitalManagementSystem_DBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet4.xsc">
+      <DependentUpon>hospitalManagementSystem_DBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hospitalManagementSystem_DBDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet4.xss">
+      <DependentUpon>hospitalManagementSystem_DBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet5.xsc">
+      <DependentUpon>hospitalManagementSystem_DBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hospitalManagementSystem_DBDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet5.xss">
+      <DependentUpon>hospitalManagementSystem_DBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet6.xsc">
+      <DependentUpon>hospitalManagementSystem_DBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hospitalManagementSystem_DBDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet6.xss">
+      <DependentUpon>hospitalManagementSystem_DBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet7.xsc">
+      <DependentUpon>hospitalManagementSystem_DBDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hospitalManagementSystem_DBDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet7.xss">
+      <DependentUpon>hospitalManagementSystem_DBDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet8.xsc">
+      <DependentUpon>hospitalManagementSystem_DBDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hospitalManagementSystem_DBDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet8.xss">
+      <DependentUpon>hospitalManagementSystem_DBDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet9.xsc">
+      <DependentUpon>hospitalManagementSystem_DBDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hospitalManagementSystem_DBDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hospitalManagementSystem_DBDataSet9.xss">
+      <DependentUpon>hospitalManagementSystem_DBDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
